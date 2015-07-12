@@ -66,19 +66,7 @@ public class Mapa extends FragmentActivity implements
                 .setFastestInterval(1 * 1000); // 1 second, in milliseconds
     }
 
-    public void onClick(View view){
-        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-        cameraUpdate = CameraUpdateFactory.newLatLngZoom(MEDELLIN_LOCATION, 13);
-        mMap.animateCamera(cameraUpdate);
-    }
 
-    public void onClick1(View view){
-        if(newLocationReady){
-            mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-            cameraUpdate = CameraUpdateFactory.newLatLngZoom(currentLocation,16);
-            mMap.animateCamera(cameraUpdate);
-        }
-    }
 
 
     @Override
